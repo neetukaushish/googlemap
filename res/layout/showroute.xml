@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+  <LinearLayout android:layout_width="match_parent" 
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/lay_from">
+    <TextView android:text="@string/From"
+    android:layout_width="60dip"
+    android:textSize="20sp"
+    android:layout_height="wrap_content"
+    android:id="@+id/lblfrom"
+    android:layout_alignBaseline="@+id/textfrom"/>
+    <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/textfrom"/>
+	</LinearLayout>
+	<LinearLayout android:layout_below="@id/lay_from"
+	android:id="@+id/layout_to"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+    <TextView android:text="@string/To"
+    android:layout_width="60dip"
+    android:textSize="20sp"
+    android:layout_height="wrap_content"
+    android:id="@+id/lblto"
+    android:layout_alignBaseline="@+id/textto"/>
+    <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/textto"/>
+    </LinearLayout>
+	<LinearLayout android:layout_below="@id/layout_to"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true">
+	<Button android:id="@+id/btn_find_route_ok"
+	android:layout_width="100dip"
+	android:layout_height="wrap_content"
+	android:text="@string/Ok"
+	android:layout_marginRight="5dip"
+	android:onClick="getText"
+	/>
+	<Button android:id="@+id/btn_find_route_cancel"
+	android:layout_width="100dip"
+	android:layout_height="wrap_content"
+	android:text="@string/Cancel"
+	
+	/>
+	
+    </LinearLayout>    
+</RelativeLayout>
